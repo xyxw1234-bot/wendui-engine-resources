@@ -1,0 +1,16 @@
+[Unit]
+Description=Wendui Engine Official Tool App API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/apps/wendui-engine-tool-api
+EnvironmentFile=-/etc/wendui-engine-tool-api.env
+ExecStart=/usr/bin/python3 /opt/apps/wendui-engine-tool-api/app.py
+Restart=always
+RestartSec=3
+User=root
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

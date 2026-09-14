@@ -1,0 +1,46 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.token
+*.secret
+credentials/
+secrets/
+
+# Runtime data
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+uploads/
+artifacts/
+sessions/
+logs/
+*.log
+*.pid
+
+# Caches and build output
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+.cache/
+.pytest_cache/
+tmp/
+temp/
+generated/
+
+# QA and local working files
+qa_*
+*_payload.json
+*.bak
+*.bak.*
+*.old
+.hermes/
+tmp_smartedu_full/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

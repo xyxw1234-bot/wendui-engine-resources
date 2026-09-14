@@ -1,0 +1,410 @@
+{
+  "source": "/opt/data/wendui_engine_work",
+  "files": [
+    {
+      "path": "assets/auth.js",
+      "bytes": 46125,
+      "sha256": "ebb1c0dfcbc8ea8c54091f9fa24fa0cbfe0e55ee819be2889d3a9ffbd1647958"
+    },
+    {
+      "path": "assets/center-archive-results.png",
+      "bytes": 2004835,
+      "sha256": "5c4ac7f6c89d56ed90c023df64ba5a198abf77823c2df38bbb495193b1de7c54"
+    },
+    {
+      "path": "assets/center-build-idea.png",
+      "bytes": 2114489,
+      "sha256": "8268188abaa641a35bf3ea80faf1d3643585c527616ed290910aed41e6faa051"
+    },
+    {
+      "path": "assets/nav.js",
+      "bytes": 309,
+      "sha256": "4f3d98256e9fb21b21f20e94f00dc477aeeaf8ea833f55bb05ebdb3fa9ced21f"
+    },
+    {
+      "path": "assets/org.js",
+      "bytes": 3756,
+      "sha256": "b42550a88f2fda4dd7c1832d061c2c53689a970889d0930be7516b1e2e52358d"
+    },
+    {
+      "path": "assets/site.css",
+      "bytes": 143508,
+      "sha256": "c8cd97838a6f84d1d9e93ae2002d5b35503d9604204e69b707b7efb321bbe849"
+    },
+    {
+      "path": "docs/node-engine-artifact-card-system-v1.md",
+      "bytes": 4870,
+      "sha256": "40d0ec4d89c24740af0a8d4edf35591ec3c151e5a61ae9f0a89d824a6581dd34"
+    },
+    {
+      "path": "hermes/index.html",
+      "bytes": 4768,
+      "sha256": "4f5189fb5a02b702477712f6ae9337b356f15bb536e8a64a82efae3c2761e23d"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11841,
+      "sha256": "b9732953166e4456457e5ff06a846929499c299be16e0866c2cab82b33c1b024"
+    },
+    {
+      "path": "login/index.html",
+      "bytes": 3448,
+      "sha256": "a55d55d95bcc0b66e8a0d071a50e7ee4c2708ad4bdb8a582232c78523916608d"
+    },
+    {
+      "path": "me/index.html",
+      "bytes": 6309,
+      "sha256": "5d4638f4fa7aa41afa038d230513255d8dd1bd119677149f92df9ddd8acf800d"
+    },
+    {
+      "path": "production/index.html",
+      "bytes": 3163,
+      "sha256": "d4745e10d8a93c3f621138cd4d0681bf7a364fd040b66779e37058142e0ef64e"
+    },
+    {
+      "path": "production/onboarding/index.html",
+      "bytes": 5455,
+      "sha256": "df33d8ad504f8e725364e64a1a9fa43406c44770f267da6c320d582319d4bc70"
+    },
+    {
+      "path": "production/practice/cases/ai-education-brief.html",
+      "bytes": 2095,
+      "sha256": "f2a11d8324c129d22d47010f3484bbade1aa18bce735859df99f8df7e6349f45"
+    },
+    {
+      "path": "production/practice/cases/function-explorer.html",
+      "bytes": 3135,
+      "sha256": "f0135c587c0f1e1a9f41755dec892f20cf8f9485f8aa3b05da2a91620e6d3498"
+    },
+    {
+      "path": "production/practice/cases/reading-task.html",
+      "bytes": 2084,
+      "sha256": "fcf78d5c0489ce7942173f113fc3a2db79a182871da19df31588e9c435d607f0"
+    },
+    {
+      "path": "production/practice/cases/student-error-notebook.html",
+      "bytes": 1738,
+      "sha256": "a12d02f952fff475233eb52f8abf05c5b4eda3e95c72df54fde91bfa6eaf8f1d"
+    },
+    {
+      "path": "production/practice/cases/student-essay-feedback.html",
+      "bytes": 2726,
+      "sha256": "6d5830dfeb9e8acc5dbc205817feef306141fc45d7d52bd8e8b5359692a8c2ac"
+    },
+    {
+      "path": "production/practice/cases/student-expression-stage.html",
+      "bytes": 1913,
+      "sha256": "0abd47bb4f365fd9718084b581ea0212187d19595a09dcef6b80d8a373d019dc"
+    },
+    {
+      "path": "production/practice/cases/student-function-game.html",
+      "bytes": 1633,
+      "sha256": "457264fc859faffa4fa4afe27ced3af9bfe1cfe66cac084852e140065de99513"
+    },
+    {
+      "path": "production/practice/cases/student-idea-lab.html",
+      "bytes": 1946,
+      "sha256": "1abfd5604b7903995fc391efaca66333fcee01d1ab93dea44a29b88574755567"
+    },
+    {
+      "path": "production/practice/cases/student-insect-research.html",
+      "bytes": 2821,
+      "sha256": "c231459e9fc7fa1aa54b81fdedde50a899499dcb0003a4d68bacc7749760bd5c"
+    },
+    {
+      "path": "production/practice/cases/student-insect-study.html",
+      "bytes": 1711,
+      "sha256": "38db2554efebb8588177cbad36b5bc98d36c0b70e2a1743bec1d6c2d50d41fcd"
+    },
+    {
+      "path": "production/practice/cases/student-interest-project.html",
+      "bytes": 1922,
+      "sha256": "ab26af4d589385757a3ccce17be1ef83d681264e7aba98c66bd09bd105f431bd"
+    },
+    {
+      "path": "production/practice/cases/student-life-plan.html",
+      "bytes": 1949,
+      "sha256": "e9ef025d7f44162494f995a06133d67b606fcd580a80949687e8b7b9de0309fd"
+    },
+    {
+      "path": "production/practice/cases/student-maker-page.html",
+      "bytes": 1922,
+      "sha256": "dc8ba83048ba1efac1009bda31edb095fe9a59cc21fd9171d5745103da767d65"
+    },
+    {
+      "path": "production/practice/cases/student-math-game.html",
+      "bytes": 2699,
+      "sha256": "f776b6fa6331031690bb443df2f3ee24522f1dc7cdd1d7d014a7ffb1b3cd20a1"
+    },
+    {
+      "path": "production/practice/cases/student-mistake-notebook.html",
+      "bytes": 2895,
+      "sha256": "3d375dd6e055e15055f717fd5a48b3a71469829df3e77f21e1fb10eec3c7bb19"
+    },
+    {
+      "path": "production/practice/cases/student-review-plan.html",
+      "bytes": 1648,
+      "sha256": "d637ecefc417bb1120f2586a30d1cb016aae297b59c7ba4bb04605c28f76be5b"
+    },
+    {
+      "path": "production/practice/cases/student-study-plan.html",
+      "bytes": 2560,
+      "sha256": "e5a21419fc9bd267574797c52c7896661e5eaf0531981790fe69728e8a2bac80"
+    },
+    {
+      "path": "production/practice/cases/student-water-poster.html",
+      "bytes": 2354,
+      "sha256": "59bab41fa6665c2ed0cb2f5db6ace4a412d1b4dc4da555d44540a9ef94f92a49"
+    },
+    {
+      "path": "production/practice/cases/student-writing-feedback.html",
+      "bytes": 1720,
+      "sha256": "9e76c49bbaeeb286cb5e87ed62b7a1f7349d7b702158f09ee22a2b6d1a05e9c3"
+    },
+    {
+      "path": "production/practice/cases/teacher-communication-pack.html",
+      "bytes": 2024,
+      "sha256": "023274f18fb3040e0c99672fefe3ce94cd7899f6ad4c56efdc1c46ab8c3a7d05"
+    },
+    {
+      "path": "production/practice/cases/teacher-data-dashboard.html",
+      "bytes": 1949,
+      "sha256": "d97a897ac862287626d2a703d7844fc865b58da19bfa670da3d86ca21afebce7"
+    },
+    {
+      "path": "production/practice/cases/teacher-growth-record.html",
+      "bytes": 1964,
+      "sha256": "cf836eb425a94f7f96a3e9571471060a68668f3aca590e252aab9dd1778de047"
+    },
+    {
+      "path": "production/practice/cases/teacher-homework-feedback.html",
+      "bytes": 3299,
+      "sha256": "dbf104375a4de2f06396f895357e967521d5613ed421a191831e389c79299cb1"
+    },
+    {
+      "path": "production/practice/cases/teacher-parent-meeting-ppt.html",
+      "bytes": 2510,
+      "sha256": "14abe0f4b29aabcb87fe9529fbb6c3281e7a50576c09b3deb7cc34848a6fda95"
+    },
+    {
+      "path": "production/practice/cases/teacher-research-digest.html",
+      "bytes": 1973,
+      "sha256": "124bcf94c40ef1a312b759093f6f7904662cbae30b29177dba88e93a3446f67a"
+    },
+    {
+      "path": "production/practice/cases/teacher-week-plan.html",
+      "bytes": 1937,
+      "sha256": "e5185b514c320b79c2db1048e481ef567d7994745437fa06b7d5aa4374ade548"
+    },
+    {
+      "path": "production/practice/cases/teacher-weekly-report.html",
+      "bytes": 2797,
+      "sha256": "430b1f221fcc9b89a1cc70db13892a6c73d5e1f440fab50df213134c1d578269"
+    },
+    {
+      "path": "production/practice/index.html",
+      "bytes": 32419,
+      "sha256": "51c0e9e5009515975bc66f11d49d91315086dd3e1b1cfa18c7b4919306317482"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/agent-loop-guide.png",
+      "bytes": 525512,
+      "sha256": "0deefad78525490c108225e9caca7c4ab531c209365257f2ae55fe0332e0d28b"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/ai-course-system.png",
+      "bytes": 142311,
+      "sha256": "df339b9303d6eb4b6105c2d339395b98641381fb6ae0d65ecd0793e83d8d6613"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/ai-tools.png",
+      "bytes": 40918,
+      "sha256": "0e5cfcf7fcbb4c34a9ccf1ee77bef9aec829b90a1a07ca815df9b2e5f3dfc1e6"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/chuangshi.png",
+      "bytes": 300395,
+      "sha256": "b7c27052e01cc5f7269c901e147da713c94ef84bc455c2379e53aff37f50a2f8"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/default-placeholder.png",
+      "bytes": 1308873,
+      "sha256": "b3ccf07faa70ba6b8d3da8a7e118857523f3021c54f7a842c4fa4010b4738337"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/education-report.png",
+      "bytes": 168700,
+      "sha256": "748a7bfa8afcc6c9ba692718541b85635e544d05e765ee444f3546c089f09c10"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-01-math-gold-miner-html.png",
+      "bytes": 73456,
+      "sha256": "e225476416ba265e7b2410228483e007c47833b87e0d85f56eb0c06f0eaafc8f"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-02-route-planning-html.png",
+      "bytes": 114338,
+      "sha256": "c9af4d7eb8eb2ad5d1e7aac7b75fa96f438116d04067ee3cdbb8f3c12b104726"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-03-cuboid-unfold-html.png",
+      "bytes": 451390,
+      "sha256": "20890e798abef894e0d66a95415d5412c8991b1f6dd650a6caf61d3569dcfc55"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-04-wisteria-courseware-html.png",
+      "bytes": 299678,
+      "sha256": "f5ddb67cd7106912f22c27b189cdb3633e3a319dbad7aa14b67f92aaab96e58a"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-05-face-recognition-html.png",
+      "bytes": 427512,
+      "sha256": "370f0e13478b2217ef9134a90e9e7f7097174f955ba2404e1bb3524893ccadea"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-06-image-recognition-html.png",
+      "bytes": 33178,
+      "sha256": "2a411c2ec9f8e242e7038d9b325b07db458907464511cc39d137b21fb6e28324"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-07-certificate-gen-html.png",
+      "bytes": 269154,
+      "sha256": "d7a5a4761a9ea26a39eb600abe26355f98648d0767eaf7a7ed15caab8b4c610c"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-08-cylinder-volume-html.png",
+      "bytes": 36376,
+      "sha256": "eab7814696ada25dc8e00d02cfdd7add552bb8aebd080579dc151fd65690aefe"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-09-healthy-food-html.png",
+      "bytes": 234709,
+      "sha256": "7b5d7cb4bd22359b7f6c70543a431ffd629eb7503390edefe3674a6763a83491"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/feixiang-replicas-10-smart-kids-html.png",
+      "bytes": 52774,
+      "sha256": "c9d6f28a494425f05da0a98f67603833198b3c1799c9f60bb466bf43c10b99cc"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-106.svg",
+      "bytes": 1485,
+      "sha256": "1d2b62e50fcaac01e71dbf93d38492760323b094c980d2906027c21d7bd8a78f"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-388.svg",
+      "bytes": 1467,
+      "sha256": "37043b3af11281453919fe3476d97342b542894714d9503c1961be51f173bf2c"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-392.svg",
+      "bytes": 949,
+      "sha256": "c6460aa7aea263acacc6aa2320710d4f940fc39e7361082b633ea2214d224b02"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-399.svg",
+      "bytes": 949,
+      "sha256": "dddd00a68c77d941e8d9cd68a873f25b7023edaa8970b7232affcd4fd4711fbd"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-401.svg",
+      "bytes": 931,
+      "sha256": "56373334cebc43d70f4c480be1a3ce3267a9e7a15d6f65332a71dce6517c7a4b"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-405.svg",
+      "bytes": 952,
+      "sha256": "27a7c17be45e7c93d2383a455dd2bfeedfd7fac0803c894a115d962e46d0b4ba"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-408.svg",
+      "bytes": 940,
+      "sha256": "7c66305fd5fc4253b5f465ae8c716a23ef5a4c29d2c415e79f4671f691fb7012"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-413.svg",
+      "bytes": 934,
+      "sha256": "a2be49c7aacdc5e162cf98883c8c4dab08e830d5b33086beae49e20ab7e69f9d"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-416.svg",
+      "bytes": 952,
+      "sha256": "5a436170a5d1622e6ae8b4f00eb6d5a3d9ce4a7aed2b2613dbf9a84fb3447259"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-419.svg",
+      "bytes": 957,
+      "sha256": "9fd85a4649250863beffce178c4882999bac6708871479cd9d307373743bcdf7"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-453.svg",
+      "bytes": 1470,
+      "sha256": "117a24012330004af8effc3d7054658082896c5199f5c3efbf340f0a3886aedd"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-457.svg",
+      "bytes": 961,
+      "sha256": "91be9030e8ab6811d9f0ea47bc537f893c10b395a510c9dbe29b52f89f3cf87e"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-459.svg",
+      "bytes": 1482,
+      "sha256": "4c663bda6ee221495277478ce8f30ea78ce5207bf2f18b1d78ed2ec549d7fe40"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-466.svg",
+      "bytes": 1478,
+      "sha256": "7b359db3c20f5c3fa7ac3d05ce4a7659f3c669f81a40e2dfb8d310b5bc4a9340"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-476.svg",
+      "bytes": 958,
+      "sha256": "40e667b8b78e8fb30bf3c9e30e971b7c987dbdcf0f24867fb94412fbe7198ed1"
+    },
+    {
+      "path": "resources/bjzx/artifact-covers/official-app-621.svg",
+      "bytes": 1473,
+      "sha256": "771747adcaf5078a3533cc95d3e5e2ad0f16da90d9b903c5345f1c0a38e3dc52"
+    },
+    {
+      "path": "resources/bjzx/education-report-index.html",
+      "bytes": 3278,
+      "sha256": "1b3db886bfc2ee25219e1c4badb1e5cc16e70f48a018338a1e241b6b2ffa7f90"
+    },
+    {
+      "path": "resources/bjzx/hermes-skills-index.json",
+      "bytes": 239945,
+      "sha256": "7716996d5673acc2e0389a07b15cd0c0f68cf417890b55f92d57ca438824928b"
+    },
+    {
+      "path": "resources/bjzx/index.html",
+      "bytes": 361814,
+      "sha256": "a73e58d6ca1eab42e5cfef79098df8430906ef27dcd9cfcb805f6e4ea77f0323"
+    },
+    {
+      "path": "resources/bjzx/official-curriculum.json",
+      "bytes": 10076166,
+      "sha256": "dd3313748fba84e9a03563df5e75d8c628ee6c1d5098dbf1630c96a9ad0d122c"
+    },
+    {
+      "path": "resources/index.html",
+      "bytes": 3516,
+      "sha256": "5c69a443c6ffc3bc571d89ef3ef394ed7e93509f123328b92ed710e338320ea8"
+    },
+    {
+      "path": "scripts/build_official_curriculum_full.py",
+      "bytes": 9671,
+      "sha256": "62b424afbc9ad039b6ea8e155f76b7b73e0f69e80cce757701ec0fdac744575a"
+    },
+    {
+      "path": "wendui-engine-tool-api.service",
+      "bytes": 362,
+      "sha256": "c66be8d082d6b9747f71f7d8302ba894b9758d53d3065a3185d35f706e75cf7e"
+    },
+    {
+      "path": "wendui_tool_api.py",
+      "bytes": 378789,
+      "sha256": "5ab7545cd5bf29d00b1240ccd0c61c28762bf10efd7394b0ded955d433bd94cb"
+    }
+  ]
+}

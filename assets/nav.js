@@ -1,0 +1,1 @@
+(()=>{const bar=document.querySelector('.topbar');if(!bar)return;let timer=null;function mark(){bar.classList.toggle('nav-rest',window.scrollY>4);clearTimeout(timer);timer=setTimeout(()=>bar.classList.toggle('nav-rest',window.scrollY>4),120)}window.addEventListener('scroll',mark,{passive:true});mark();})();
