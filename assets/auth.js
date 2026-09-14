@@ -9,8 +9,8 @@
   const cfg=()=>ROLES[role()];
   function get(){try{return JSON.parse(localStorage.getItem(cfg().authKey)||'null')}catch(e){return null}}
   function login(){localStorage.setItem(cfg().authKey,JSON.stringify(cfg().defaultUser));return cfg().defaultUser}
-  function logout(){localStorage.removeItem(cfg().authKey);location.href='/wendui-engine/login/'}
-  function nextUrl(){const q=new URLSearchParams(location.search);return q.get('next')||'/wendui-engine/me/'}
+  function logout(){localStorage.removeItem(cfg().authKey);location.href='/wendui-engine-resources/login/'}
+  function nextUrl(){const q=new URLSearchParams(location.search);return q.get('next')||'/wendui-engine-resources/me/'}
   window.WenduiRole={get:role,set:setRole,isStudent(){return role()==='student'},toggle(){setRole(role()==='student'?'teacher':'student');location.reload()}};
   window.WenduiAuth={get key(){return cfg().authKey},get,login,logout,ensureDemo(){return get()},nextUrl};
 
@@ -19,16 +19,16 @@
     const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
     nodes.forEach(n=>{let v=n.nodeValue;for(const [a,b] of Object.entries(map)){if(v.includes(a))v=v.split(a).join(b)}n.nodeValue=v;});
   }
-  function isLiteSubpage(){const n=location.pathname.replace(/\/index\.html$/,'/');return n.endsWith('/wendui-engine/production/onboarding/')||n.endsWith('/wendui-engine/production/practice/')||n.endsWith('/wendui-engine/hermes/');}
+  function isLiteSubpage(){const n=location.pathname.replace(/\/index\.html$/,'/');return n.endsWith('/wendui-engine-resources/production/onboarding/')||n.endsWith('/wendui-engine-resources/production/practice/')||n.endsWith('/wendui-engine-resources/hermes/');}
   function makeSelector(){
-    const n=location.pathname.replace(/\/index\.html$/,'/');const allow=n==='/wendui-engine/'||n.endsWith('/wendui-engine/login/');
+    const n=location.pathname.replace(/\/index\.html$/,'/');const allow=n==='/wendui-engine-resources/'||n.endsWith('/wendui-engine-resources/login/');
     document.querySelectorAll('.version-switcher').forEach(el=>{if(!allow)el.remove()}); if(!allow)return;
     const brand=document.querySelector('.brand'); if(!brand||brand.querySelector('.version-switcher'))return;
     const c=cfg();const btn=document.createElement('button');btn.type='button';btn.className='version-switcher';btn.innerHTML='<b>当前'+c.label+'</b><span>'+c.switchLabel+'</span>';btn.onclick=e=>{e.preventDefault();window.WenduiRole.toggle()};brand.appendChild(btn);
   }
   function applyStudentGallery(){
     const gallery=document.querySelector('.gallery');if(!gallery||gallery.dataset.studentGallery)return;gallery.dataset.studentGallery='1';
-    gallery.innerHTML=`<article class="panel artifact-card"><div class="thumb"><iframe src="/wendui-engine/production/practice/cases/student-insect-research.html" title="城市昆虫观察小研究缩略图"></iframe></div><div class="artifact-body"><div class="artifact-meta"><span>小研究</span><span>观察记录</span><span>可展示页面</span></div><h3>我的城市昆虫观察小研究</h3><p>把一周观察到的昆虫、地点、时间和发现整理成可展示的小研究页面。</p><div class="evidence">适用场景：科学探究、项目学习、社团展示。</div><div class="artifact-actions"><a class="btn" target="_blank" href="/wendui-engine/production/practice/cases/student-insect-research.html">打开完整预览</a></div></div></article><article class="panel artifact-card"><div class="thumb"><iframe src="/wendui-engine/production/practice/cases/student-math-game.html" title="二次函数闯关小游戏缩略图"></iframe></div><div class="artifact-body"><div class="artifact-meta"><span>数学练习</span><span>互动工具</span><span>闯关产品成果</span></div><h3>二次函数闯关小游戏</h3><p>把二次函数图像判断做成三关小游戏，边玩边复习顶点、开口和交点。</p><div class="evidence">适用场景：自主复习、小组挑战、成果展示。</div><div class="artifact-actions"><a class="btn" target="_blank" href="/wendui-engine/production/practice/cases/student-math-game.html">打开完整预览</a></div></div></article><article class="panel artifact-card"><div class="thumb"><iframe src="/wendui-engine/production/practice/cases/student-water-poster.html" title="校园节水倡议海报页缩略图"></iframe></div><div class="artifact-body"><div class="artifact-meta"><span>公共议题</span><span>海报页</span><span>路演说明</span></div><h3>校园节水倡议海报页</h3><p>把校园节水问题、调查发现、行动建议和倡议口号做成一页展示产品成果。</p><div class="evidence">适用场景：班会展示、项目路演、校园倡议。</div><div class="artifact-actions"><a class="btn" target="_blank" href="/wendui-engine/production/practice/cases/student-water-poster.html">打开完整预览</a></div></div></article>`;
+    gallery.innerHTML=`<article class="panel artifact-card"><div class="thumb"><iframe src="/wendui-engine-resources/production/practice/cases/student-insect-research.html" title="城市昆虫观察小研究缩略图"></iframe></div><div class="artifact-body"><div class="artifact-meta"><span>小研究</span><span>观察记录</span><span>可展示页面</span></div><h3>我的城市昆虫观察小研究</h3><p>把一周观察到的昆虫、地点、时间和发现整理成可展示的小研究页面。</p><div class="evidence">适用场景：科学探究、项目学习、社团展示。</div><div class="artifact-actions"><a class="btn" target="_blank" href="/wendui-engine-resources/production/practice/cases/student-insect-research.html">打开完整预览</a></div></div></article><article class="panel artifact-card"><div class="thumb"><iframe src="/wendui-engine-resources/production/practice/cases/student-math-game.html" title="二次函数闯关小游戏缩略图"></iframe></div><div class="artifact-body"><div class="artifact-meta"><span>数学练习</span><span>互动工具</span><span>闯关产品成果</span></div><h3>二次函数闯关小游戏</h3><p>把二次函数图像判断做成三关小游戏，边玩边复习顶点、开口和交点。</p><div class="evidence">适用场景：自主复习、小组挑战、成果展示。</div><div class="artifact-actions"><a class="btn" target="_blank" href="/wendui-engine-resources/production/practice/cases/student-math-game.html">打开完整预览</a></div></div></article><article class="panel artifact-card"><div class="thumb"><iframe src="/wendui-engine-resources/production/practice/cases/student-water-poster.html" title="校园节水倡议海报页缩略图"></iframe></div><div class="artifact-body"><div class="artifact-meta"><span>公共议题</span><span>海报页</span><span>路演说明</span></div><h3>校园节水倡议海报页</h3><p>把校园节水问题、调查发现、行动建议和倡议口号做成一页展示产品成果。</p><div class="evidence">适用场景：班会展示、项目路演、校园倡议。</div><div class="artifact-actions"><a class="btn" target="_blank" href="/wendui-engine-resources/production/practice/cases/student-water-poster.html">打开完整预览</a></div></div></article>`;
   }
   function studentMap(){return {
     '教师 AI 工作流引擎':'学生 AI 创作伙伴',
@@ -204,8 +204,8 @@
     document.querySelectorAll('[data-auth-phone]').forEach(el=>el.textContent=user?user.phone:'18193185960');
     document.querySelectorAll('[data-auth-status]').forEach(el=>el.textContent=user?'已登录 · '+user.name:'未登录');
     const av=document.querySelector('.account-avatar'); if(av)av.textContent=r==='student'?'名':'志';
-    const meLink=document.querySelector('.links a[href="/wendui-engine/me/"]');
-    if(meLink){if(user){meLink.textContent=user.name;meLink.classList.add('identity-link')}else{meLink.textContent='登录';meLink.classList.remove('identity-link');meLink.href='/wendui-engine/login/?next=/wendui-engine/me/'}}
+    const meLink=document.querySelector('.links a[href="/wendui-engine-resources/me/"]');
+    if(meLink){if(user){meLink.textContent=user.name;meLink.classList.add('identity-link')}else{meLink.textContent='登录';meLink.classList.remove('identity-link');meLink.href='/wendui-engine-resources/login/?next=/wendui-engine-resources/me/'}}
     const officialKicker=document.querySelector('.official-login-copy .kicker'); if(officialKicker)officialKicker.textContent=r==='student'?'学生登录':'教师登录';
     makeSelector();normalizeAccountSections();renderOrgState();setupAccountScrollspy();setupHorseScrollspy();finalCopySweep();
   }
@@ -237,12 +237,12 @@
     function memberships(){try{const arr=JSON.parse(localStorage.getItem('wenduiOrgMemberships')||'[]');if(Array.isArray(arr)&&arr.length)return arr;const legacy=JSON.parse(localStorage.getItem('wenduiOrgState')||'null');if(legacy&&legacy.org)return [legacy.org]}catch(e){}return []}
     function activeOrg(){const arr=memberships();const code=localStorage.getItem('wenduiActiveOrgCode');return arr.find(o=>String(o.code)===String(code))||arr[0]||null}
     if(!user){
-      box.innerHTML=`<div class="org-state-banner warn"><b>未登录，暂不能加入组织</b><span>请先登录${isStudent?'学生':'教师'}账号，再输入学校或组织码。登录后这里会显示个人组织、已加入组织和组织成果权限。</span></div><div class="org-actions"><a class="btn primary" href="/wendui-engine/login/?next=/wendui-engine/me/">去登录</a><a class="btn" href="/wendui-engine/resources/">先看产品成果</a></div>`;
+      box.innerHTML=`<div class="org-state-banner warn"><b>未登录，暂不能加入组织</b><span>请先登录${isStudent?'学生':'教师'}账号，再输入学校或组织码。登录后这里会显示个人组织、已加入组织和组织成果权限。</span></div><div class="org-actions"><a class="btn primary" href="/wendui-engine-resources/login/?next=/wendui-engine-resources/me/">去登录</a><a class="btn" href="/wendui-engine-resources/resources/">先看产品成果</a></div>`;
       return;
     }
     const arr=memberships(); const org=activeOrg();
     if(arr.length){
-      box.innerHTML=`<div class="org-state-banner ok"><b>已加入 ${arr.length} 个组织</b><span>当前组织：${org.name||'学校组织'} · 组织码 ${org.code||'BJZX-2026'} · 身份 ${org.role||'成员'}。可以继续加入或创建组织，并在产品成果空间左上角选择。</span></div><div class="org-summary-grid">${arr.map(o=>`<div><span>${String(o.code||'ORG')}</span><b>${o.name||'学校组织'}</b><em>${String(o.code)===String(org.code)?'当前使用':'可选择'}</em></div>`).join('')}</div><div class="input-stack org-join-row"><input id="joinOrgCodeMe" value="CSXY-2026" aria-label="继续加入组织代码"><button class="btn primary" type="button" onclick="WenduiOrg.join(document.getElementById('joinOrgCodeMe').value||'CSXY-2026');location.reload()">继续加入组织</button><button class="btn" type="button" onclick="WenduiOrg.create(prompt('请输入新组织名称')||'我的新组织');location.reload()">创建新组织</button><a class="btn" href="/wendui-engine/resources/bjzx/">进入产品成果空间</a><button class="btn" type="button" onclick="WenduiOrg.reset();location.reload()">清空演示组织</button><div class="org-help">多组织会保存在本机浏览器，产品成果空间会出现组织选择器。</div></div>`;
+      box.innerHTML=`<div class="org-state-banner ok"><b>已加入 ${arr.length} 个组织</b><span>当前组织：${org.name||'学校组织'} · 组织码 ${org.code||'BJZX-2026'} · 身份 ${org.role||'成员'}。可以继续加入或创建组织，并在产品成果空间左上角选择。</span></div><div class="org-summary-grid">${arr.map(o=>`<div><span>${String(o.code||'ORG')}</span><b>${o.name||'学校组织'}</b><em>${String(o.code)===String(org.code)?'当前使用':'可选择'}</em></div>`).join('')}</div><div class="input-stack org-join-row"><input id="joinOrgCodeMe" value="CSXY-2026" aria-label="继续加入组织代码"><button class="btn primary" type="button" onclick="WenduiOrg.join(document.getElementById('joinOrgCodeMe').value||'CSXY-2026');location.reload()">继续加入组织</button><button class="btn" type="button" onclick="WenduiOrg.create(prompt('请输入新组织名称')||'我的新组织');location.reload()">创建新组织</button><a class="btn" href="/wendui-engine-resources/resources/bjzx/">进入产品成果空间</a><button class="btn" type="button" onclick="WenduiOrg.reset();location.reload()">清空演示组织</button><div class="org-help">多组织会保存在本机浏览器，产品成果空间会出现组织选择器。</div></div>`;
       return;
     }
     box.innerHTML=`<div class="org-state-banner"><b>已登录，尚未加入学校或组织</b><span>当前是个人空间，只能看到自己的爱马、用量和个人成果入口。输入组织码后，产品成果库会出现组织资源、${isStudent?'同学成果':'教师成果'}和优秀成果案例。</span></div><div class="input-stack org-join-row"><input id="joinOrgCodeMe" value="BJZX-2026" aria-label="组织管理代码"><button class="btn primary" type="button" onclick="WenduiOrg.join(document.getElementById('joinOrgCodeMe').value||'BJZX-2026');location.reload()">加入组织</button><button class="btn" type="button" onclick="WenduiOrg.create(prompt('请输入新组织名称')||'我的教学组织');location.reload()">创建组织</button><div class="org-help">现在支持加入/创建多个组织；加入后可在产品成果空间左上角选择。</div></div>`;
@@ -259,8 +259,8 @@
 
   document.addEventListener('DOMContentLoaded',()=>{
     const n=location.pathname.replace(/\/index\.html$/,'/');const user=get();
-    if(user&&n.endsWith('/wendui-engine/login/')){const q=new URLSearchParams(location.search);location.replace(q.get('next')||'/wendui-engine/me/');return}
-    if(!user&&n.endsWith('/wendui-engine/me/')){document.body.classList.remove('is-logged-in')}
+    if(user&&n.endsWith('/wendui-engine-resources/login/')){const q=new URLSearchParams(location.search);location.replace(q.get('next')||'/wendui-engine-resources/me/');return}
+    if(!user&&n.endsWith('/wendui-engine-resources/me/')){document.body.classList.remove('is-logged-in')}
     document.body.classList.toggle('is-logged-in',!!user);bindLogin();applyRole();setTimeout(applyRole,200);setTimeout(applyRole,1000);
   });
   window.WenduiDoLogin=function(ev){if(ev)ev.preventDefault();login();const r=document.getElementById('loginResult');if(r){r.className='result show ok';r.textContent='登录成功，正在进入。'}setTimeout(()=>location.href=nextUrl(),160);return false};

@@ -3,9 +3,9 @@
   const LIST_KEY='wenduiOrgMemberships';
   const ACTIVE_KEY='wenduiActiveOrgCode';
   function defaultState(){return {org:null, personalResources:[
-    {title:'函数图像互动探究工具', type:'数学课堂', owner:'志博', url:'/wendui-engine/production/practice/cases/function-explorer.html'},
-    {title:'托物言志阅读任务单', type:'语文阅读', owner:'志博', url:'/wendui-engine/production/practice/cases/reading-task.html'},
-    {title:'学校 AI 应用教研简报', type:'教研汇报', owner:'志博', url:'/wendui-engine/production/practice/cases/ai-education-brief.html'}
+    {title:'函数图像互动探究工具', type:'数学课堂', owner:'志博', url:'/wendui-engine-resources/production/practice/cases/function-explorer.html'},
+    {title:'托物言志阅读任务单', type:'语文阅读', owner:'志博', url:'/wendui-engine-resources/production/practice/cases/reading-task.html'},
+    {title:'学校 AI 应用教研简报', type:'教研汇报', owner:'志博', url:'/wendui-engine-resources/production/practice/cases/ai-education-brief.html'}
   ]}}
   function get(){try{return JSON.parse(localStorage.getItem(KEY)||'null')||defaultState()}catch(e){return defaultState()}}
   function set(s){localStorage.setItem(KEY, JSON.stringify(s)); return s}

@@ -1,6 +1,10 @@
 # 问对引擎网页资源
 
-本仓库保存问对引擎当前网页、产品成果中心、官方课程资源及工具应用后端的可恢复源码快照。
+公开预览：https://xyxw1234-bot.github.io/wendui-engine-resources/
+
+本仓库保存问对引擎当前网页、产品成果中心、官方课程资源及工具应用后端的可恢复源码快照。GitHub Pages 版本已将静态页面路径适配为 `/wendui-engine-resources/`；服务器恢复时仍按 `RESTORE.md` 中的生产路径部署。
+
+> GitHub Pages 只承载公开静态预览；登录、AI生成、保存、用户数据等后端功能仍需独立服务器运行。
 
 ## 资源范围
 
